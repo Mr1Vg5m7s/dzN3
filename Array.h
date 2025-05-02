@@ -244,7 +244,7 @@ public:
 		int Capacity = 0;
 		if (size > this->size)
 		{
-			T* newArr = new T(size + grow);
+			T* newArr = new T[size + grow];
 			for (size_t i = 0; i < this->size; i++)
 			{
 				newArr[i] = arr[i];
