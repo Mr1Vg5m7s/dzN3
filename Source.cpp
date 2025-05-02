@@ -22,20 +22,17 @@ int main()
     arr.SetSize(10); 
     arr.print();
 
-    cout << "Верхняя граница: " << arr.GetUpperBound() << endl;
-    cout << "Массив пустой? " << arr.IsEmpty() << endl;
+    arr.GetUpperBound();
+    arr.IsEmpty();
 
     arr.FreeExtra(); 
     arr.print();
-
-    arr.RemoveAll(); 
-    cout << "Массив пустой после RemoveAll? " << arr.IsEmpty() << endl;
 
     Array<int> arr2(3);
     arr2.set(5, 15);
     arr2.print();
 
-    cout << "Элемент на позиции 1: " << arr2.GetAt(1) << endl;
+    arr2.GetAt(1);
     arr2.SetAt(1, 42); 
     arr2.print();
 
